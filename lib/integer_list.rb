@@ -1,7 +1,8 @@
 class IntegerList
   def self.duplicate_remover(array)
     remove_non_integers(array)
-    array.group_by(&:itself).keys
+    # array.group_by(&:itself).keys
+    array.uniq
   end
 
   private
