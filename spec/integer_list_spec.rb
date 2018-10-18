@@ -14,5 +14,9 @@ RSpec.describe 'IntegerList' do
     it 'removes duplicates and nil values from the list'do
       expect(IntegerList.duplicate_remover(sample_array_2)).to eq([3,8,4])
     end
+
+    it 'removes duplicates and strings from the list' do
+      expect(IntegerList.duplicate_remover(sample_array_3)).to eq([9,10,7,8])
+    end
   end
 end

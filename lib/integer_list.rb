@@ -6,6 +6,6 @@ class IntegerList
 
   def self.remove_non_integers(array)
     array.compact!
-    array.reject{|string| string.to_s}
+    array.delete_if {|element| element == element.to_s}
   end
 end
